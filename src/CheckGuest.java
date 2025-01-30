@@ -1,4 +1,4 @@
-
+ 
 import java.util.Scanner;
 
 public class CheckGuest {
@@ -15,9 +15,10 @@ public class CheckGuest {
         for (int i = 0; i < elencoPartecipanti.length; i++){
             if (nome.equals(elencoPartecipanti[i])){
                 presente = true;
+                break;
             }
         }
-        if(presente == true) {
+        if(presente) {
             System.out.println("Il nome è presente nella lista...Puoi ENTRARE!");
         }else{
             System.out.println("Il nome non è presente nella lista...Mi DISPIACE!");
